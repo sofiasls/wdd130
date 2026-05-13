@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ajuda a calcular bordas e paddings corretamente */
+    box-sizing: border-box; / 
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4; /* Um cinza um pouquinho mais claro que o #eee */
+    background-color: #f4f4f4; /
 }
 
 header, footer {
@@ -17,14 +17,13 @@ header, footer {
 }
 
 header {
-    font-size: 1.5rem; /* Corrigido de 'front-size' para 'font-size' */
+    font-size: 1.5rem; 
 }
 
 main {
     margin: 0 auto;
-    max-width: 800px; /* Limita a largura do conteúdo para ficar igual à imagem */
-    padding: 20px; /* Dá um respiro nas laterais em telas menores */
-    /* Removido o height: 600px; para o conteúdo fluir naturalmente */
+    max-width: 800px; 
+    padding: 20px; 
 }
 
 h1 {
@@ -33,24 +32,22 @@ h1 {
 }
 
 picture {
-    display: flex; /* Ajuda a centralizar a imagem perfeitamente */
+    display: flex; 
     justify-content: center;
     margin-bottom: 30px;
 }
 
 img {
     width: 100%;
-    max-width: 760px; /* Garante que a imagem não ultrapasse o main */
+    max-width: 760px; 
     height: auto;
-    
-    /* Cria o efeito de borda branca (polaroid) igual ao da imagem de referência */
     padding: 15px; 
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 section {
-    background-color: #e0e0e0; /* Cor de fundo acinzentada das seções */
+    background-color: #e0e0e0; 
     margin: 20px 0;
     padding: 30px;
     line-height: 1.5rem;
@@ -67,9 +64,9 @@ section h2 {
 }
 
 ul {
-    margin-left: 20px; /* Afasta as bolinhas da lista da margem esquerda */
-}
+    margin-left: 20px;
+}    
 
 ul li {
-    margin-bottom: 10px; /* Dá um respiro entre os itens da lista */
+    margin-bottom: 10px; 
 }
