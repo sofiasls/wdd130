@@ -1,3 +1,13 @@
+:root {
+    --cor-primaria: darkblue;
+    --cor-texto: #222;
+    --cor-texto-aside: #333;
+    --cor-fundo-aside: #eee;
+    --cor-borda: rgba(0, 0, 0, 0.2);
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --espacamento-base: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +15,14 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-principal);
     line-height: 1.5;
-    color: #222;
+    color: var(--cor-texto);
     margin: 0;
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-primaria);
     padding: 10px;
 }
 
@@ -23,14 +33,13 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-primaria);
 }
 
 main {
     max-width: 840px;
 }
 
-/* Regras consolidadas para a imagem do perfil dentro do main */
 main img {
     width: 150px;
     height: auto;
@@ -43,18 +52,16 @@ p {
     padding: 0;
 }
 
-/* Erros de sintaxe e digitação corrigidos */
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    margin: var(--espacamento-base);
+    border: 1px solid var(--cor-borda);
+    padding: var(--espacamento-base);
+    background-color: var(--cor-fundo-aside);
+    color: var(--cor-texto-aside);
     text-align: center;
 }
 
-/* Regra adicionada especificamente para a imagem do Hortolândia */
 aside img {
     width: 200px;
     height: auto;
