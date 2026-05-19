@@ -16,17 +16,13 @@
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: var(--fonte-body);
   color: var(--cor-texto);
   background-color: var(--cor-fundo);
 }
 
-/* Largura máxima centralizada */
-header,
-main,
-footer {
+header, main, footer {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -44,7 +40,6 @@ header img {
   width: 80px;
 }
 
-/* ── Nav do header ── */
 nav a {
   text-decoration: none;
   color: var(--cor-secundaria);
@@ -59,11 +54,10 @@ nav a:hover {
 /* ── Títulos ── */
 h1, h2 {
   font-family: var(--fonte-titulo);
-  color: var(--cor-secundaria);
   text-align: center;
 }
 
-/* ── Parágrafos, section e article ── */
+/* ── Geral ── */
 p {
   line-height: 1.7;
   margin: 12px 0;
@@ -94,9 +88,10 @@ div.hero h1 {
   position: absolute;
   top: 30px;
   width: 100%;
-  color: #ffffff;
+  color: var(--cor-secundaria);
   font-size: 2.5rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.80);
+  padding: 10px 0;
 }
 
 div.hero article {
@@ -114,6 +109,21 @@ div.hero article img {
   margin: 0 0 8px 16px;
 }
 
+/* ── Sections ── */
+section h2 {
+  color: var(--cor-secundaria);
+  margin-bottom: 16px;
+}
+
+/* Adventure Awaits — usa --cor-destaque */
+section:last-child {
+  background-color: var(--cor-destaque);
+}
+
+section:last-child h2 {
+  color: var(--cor-secundaria);
+}
+
 /* ── Footer ── */
 footer {
   background-color: #d9d9d9;
@@ -128,13 +138,12 @@ footer p {
   color: #555;
 }
 
-/* Remove sublinhado dos links de redes sociais */
-nav.rede-social a {
+nav.socialmedia a {
   text-decoration: none;
   margin-left: 8px;
 }
 
-nav.rede-social img {
+nav.socialmedia img {
   width: 32px;
   height: 32px;
 }
