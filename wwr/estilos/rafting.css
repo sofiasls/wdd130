@@ -22,33 +22,36 @@ body {
   background-color: var(--cor-fundo);
 }
 
-header, main, footer {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ── Header ── */
+/* ── Header — CSS Grid (logo + nav lado a lado) ── */
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 16px 24px;
-  background-color: #d9d9d9;
+  background-color: var(--cor-secundaria);
+  max-width: 100%;
 }
 
 header img {
-  width: 80px;
+  width: 90px;
+}
+
+/* ── Nav — CSS Flex (links lado a lado) ── */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--cor-secundaria);
+  color: #ffffff;
   font-weight: bold;
-  margin-left: 20px;
+  font-size: 1rem;
 }
 
 nav a:hover {
-  color: var(--cor-primaria);
+  color: var(--cor-destaque);
 }
 
 /* ── Títulos ── */
@@ -61,6 +64,11 @@ h1, h2 {
 p {
   line-height: 1.7;
   margin: 12px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section {
@@ -109,41 +117,89 @@ div.hero article img {
   margin: 0 0 8px 16px;
 }
 
-/* ── Sections ── */
-section h2 {
-  color: var(--cor-secundaria);
-  margin-bottom: 16px;
+/* ── Seção História ── */
+section.historia {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 
-/* Adventure Awaits — usa --cor-destaque */
-section:last-child {
+section.historia h2 {
+  color: var(--cor-secundaria);
+  margin-bottom: 8px;
+}
+
+section.historia p {
+  color: var(--cor-texto);
+}
+
+/* ── Seção Adventure Awaits — CSS Flex com 5 figuras ── */
+section.adventure {
   background-color: var(--cor-destaque);
+  padding: 40px 24px;
 }
 
-section:last-child h2 {
+section.adventure h2 {
   color: var(--cor-secundaria);
+  margin-bottom: 24px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.galeria figure {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.galeria figure img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.galeria figcaption {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--cor-secundaria);
+  padding: 6px 4px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* ── Footer ── */
 footer {
-  background-color: #d9d9d9;
+  background-color: var(--cor-secundaria);
   padding: 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 100%;
 }
 
 footer p {
   font-size: 0.85rem;
-  color: #555;
+  color: #ffffff;
+}
+
+/* Redes sociais à direita, horizontalmente */
+nav.socialmedia {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav.socialmedia a {
   text-decoration: none;
-  margin-left: 8px;
 }
 
 nav.socialmedia img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
 }
