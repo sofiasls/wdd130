@@ -45,13 +45,14 @@ div {
     height: 100px;
 }
 
-.container3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.conteiner3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  /* ou grid-template-columns: repeat(3, 1fr); */
 }
-
-.columns-3 {
-    grid-column: span 3;}
+              
+.colunas-3 {
+  grid-column: 1/4; /* ou grid-column: span 3; */
+}
 
 .tres {
     margin: .25rem;
