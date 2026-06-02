@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de HTML e CSS</title>
+    <link rel="stylesheet" href="estilos/questionario.css">
+</head>
+<body>
+    <header>
+        <h1>Questionário de HTML e CSS</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+
+            <label for="q1">1. O que significa a sigla CSS? (preencha a lacuna)</label>
+            <input type="text" name="q1" id="q1" placeholder="Digite sua resposta...">
+
+            <label for="q2">2. Explique a diferença entre os seletores <code>id</code> e <code>class</code> no CSS. (resposta curta)</label>
+            <textarea name="q2" id="q2" rows="4" placeholder="Digite sua resposta..."></textarea>
+
+            <label for="q3">3. Qual das opções abaixo é um comentário válido no CSS?</label>
+            <select name="q3" id="q3">
+                <option value="" selected disabled>Escolha uma opção...</option>
+                <option value="option1">// Este é um comentário</option>
+                <option value="option2">/* Este é um comentário */</option>
+                <option value="option3">&lt;!-- Este é um comentário --&gt;</option>
+            </select>
+
+            <label for="q4">4. Quantas propriedades CSS são usadas para criar o modelo de caixa (box model)? (número inteiro)</label>
+            <input type="number" name="q4" id="q4" min="0" placeholder="0">
+
+            <button type="submit">Enviar Questionário</button>
+
+        </form>
+    </main>
+</body>
+</html>
