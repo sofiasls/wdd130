@@ -5,6 +5,11 @@
   --cor-destaque: #f0a500;
   --cor-fundo: #f5f5f5;
   --cor-texto: #222222;
+  --cor-branco: #ffffff;
+  --cor-borda: #cccccc;
+  --cor-borda-campo: #aaaaaa;
+  --cor-hero-overlay: rgba(255, 255, 255, 0.80);
+  --cor-galeria-legenda: rgba(255, 255, 255, 0.80);
   --fonte-body: Arial, Helvetica, sans-serif;
   --fonte-titulo: Georgia, serif;
 }
@@ -29,7 +34,7 @@ header {
   align-items: center;
   padding: 16px 24px;
   background-color: var(--cor-secundaria);
-  color: #ffffff;
+  color: var(--cor-branco);
   max-width: 100%;
 }
 
@@ -46,7 +51,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--cor-branco);
   font-weight: bold;
   font-size: 1rem;
 }
@@ -74,7 +79,7 @@ main {
 
 section {
   padding: 40px 48px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--cor-borda);
 }
 
 article {
@@ -99,7 +104,7 @@ div.hero h1 {
   width: 100%;
   color: var(--cor-secundaria);
   font-size: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: var(--cor-hero-overlay);
   padding: 10px 0;
 }
 
@@ -107,7 +112,7 @@ div.hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: var(--cor-hero-overlay);
   max-width: 55%;
   padding: 16px;
 }
@@ -175,13 +180,13 @@ section.adventure h2 {
   font-weight: bold;
   color: var(--cor-secundaria);
   padding: 6px 4px;
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: var(--cor-galeria-legenda);
 }
 
 /* ── Footer ── */
 footer {
   background-color: var(--cor-secundaria);
-  color: #ffffff;
+  color: var(--cor-branco);
   padding: 16px 24px;
   display: flex;
   align-items: center;
@@ -191,22 +196,22 @@ footer {
 
 footer p {
   font-size: 0.85rem;
-  color: #ffffff;
+  color: var(--cor-branco);
 }
 
-/* Redes sociais à direita, horizontalmente */
-nav.socialmedia {
+/* Redes sociais no footer */
+nav.redes-sociais {
   display: flex;
   gap: 12px;
   justify-content: flex-end;
   align-items: center;
 }
 
-nav.socialmedia a {
+nav.redes-sociais a {
   text-decoration: none;
 }
 
-nav.socialmedia img {
+nav.redes-sociais img {
   width: 36px;
   height: 36px;
 }
@@ -231,6 +236,7 @@ nav.socialmedia img {
 .mapa iframe {
   border: none;
   display: block;
+  width: 100%;
   margin-top: 16px;
 }
 
@@ -285,11 +291,11 @@ nav.socialmedia img {
 .campo input[type="email"],
 .campo textarea {
   padding: 10px 12px;
-  border: 1px solid #aaa;
+  border: 1px solid var(--cor-borda-campo);
   border-radius: 4px;
   font-size: 1rem;
   font-family: var(--fonte-body);
-  background-color: #fff;
+  background-color: var(--cor-branco);
   color: var(--cor-texto);
 }
 
@@ -298,7 +304,7 @@ nav.socialmedia img {
 }
 
 fieldset {
-  border: 1px solid #aaa;
+  border: 1px solid var(--cor-borda-campo);
   border-radius: 4px;
   padding: 16px 20px;
   margin-bottom: 18px;
@@ -337,7 +343,7 @@ fieldset input[type="radio"] {
   width: 100%;
   padding: 12px;
   background-color: var(--cor-primaria);
-  color: #fff;
+  color: var(--cor-branco);
   font-size: 1rem;
   font-weight: bold;
   border: none;
