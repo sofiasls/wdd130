@@ -210,3 +210,143 @@ nav.socialmedia img {
   width: 36px;
   height: 36px;
 }
+
+/* ── Página Fale Conosco ── */
+
+/* Informações de contato */
+.contato-info address {
+  font-style: normal;
+  margin-bottom: 24px;
+}
+
+.contato-info address p {
+  margin: 6px 0;
+}
+
+.contato-info address a {
+  color: var(--cor-primaria);
+}
+
+/* Mapa */
+.mapa iframe {
+  border: none;
+  display: block;
+  margin-top: 16px;
+}
+
+/* Equipe */
+.equipe-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.equipe-grid figure {
+  text-align: center;
+  max-width: 200px;
+}
+
+.equipe-grid img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--cor-primaria);
+}
+
+.equipe-grid figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+  line-height: 1.5;
+}
+
+/* Formulário */
+.formulario-contato form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--cor-secundaria);
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+  padding: 10px 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: var(--fonte-body);
+  background-color: #fff;
+  color: var(--cor-texto);
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+}
+
+fieldset legend {
+  font-weight: bold;
+  color: var(--cor-secundaria);
+  padding: 0 8px;
+}
+
+fieldset label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+fieldset input[type="radio"] {
+  margin-right: 8px;
+  accent-color: var(--cor-primaria);
+}
+
+.campo-checkbox label {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.campo-checkbox input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: var(--cor-primaria);
+}
+
+/* Botão de envio */
+.btn-enviar {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--cor-primaria);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background-color: var(--cor-secundaria);
+}
