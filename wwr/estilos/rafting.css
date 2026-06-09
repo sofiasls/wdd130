@@ -282,8 +282,7 @@ nav.redes-sociais img {
   width: 160px;
   height: 160px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid var(--cor-primaria);
+  border: 3px solid var(--cor-borda);
 }
 
 .equipe-grid figcaption {
