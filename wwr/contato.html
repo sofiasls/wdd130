@@ -15,35 +15,31 @@
     <nav>
       <a href="index.html">Página Inicial</a>
       <a href="sobre.html">Sobre Nós</a>
-      <a href="passeios.html">Passeios</a>
+      <a href="viagens.html">Viagens</a>
       <a href="contato.html">Fale Conosco</a>
     </nav>
   </header>
 
   <main>
 
-    <!-- Hero -->
-    <div class="hero">
-      <article>
-        <img src="imagens/hero.jpg" alt="Grupo fazendo rafting em corredeiras">
-        <h1>Fale Conosco</h1>
-      </article>
-    </div>
-
-    <!-- Informações de Contato + Equipe -->
-    <section class="contato-info">
-      <h2>Informações de Contato</h2>
+    <!-- Informações da empresa centralizadas -->
+    <section class="empresa-info">
+      <h1>Splash Rafting em Corredeiras</h1>
       <address>
-        <p><strong>Endereço:</strong> Rua das Corredeiras, 123 – Bairro Aventura, Cidade das Águas – MG, 36000-000</p>
-        <p><strong>Telefone:</strong> (32) 3333-4444</p>
-        <p><strong>WhatsApp:</strong> (32) 99999-8888</p>
-        <p><strong>E-mail:</strong> <a href="mailto:contato@splashrafting.com">contato@splashrafting.com</a></p>
+        <p>Rua das Corredeiras, 123 – Bairro Aventura</p>
+        <p>Cidade das Águas – MG, 36000-000</p>
+        <p>+55 32 3333-4444</p>
+        <p><a href="mailto:contato@splashrafting.com">contato@splashrafting.com</a></p>
       </address>
+    </section>
+
+    <!-- Mapa (esquerda) + Formulário (direita) lado a lado -->
+    <section class="contato-principal">
 
       <div class="mapa">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.4!2d-43.3!3d-21.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDQyJzAwLjAiUyA0M8KwMTgnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr"
-          height="300"
+          height="400"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -51,6 +47,57 @@
         </iframe>
       </div>
 
+      <div class="formulario-contato">
+        <form action="#" method="post">
+
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+          </div>
+
+          <fieldset>
+            <legend>Propósito da Mensagem</legend>
+            <label for="finalidade-consulta">
+              <input type="radio" id="finalidade-consulta" name="finalidade" value="consulta-geral" required>
+              Dúvida Geral
+            </label>
+            <label for="finalidade-reserva">
+              <input type="radio" id="finalidade-reserva" name="finalidade" value="reserva">
+              Pergunta sobre Reserva
+            </label>
+            <label for="finalidade-sugestao">
+              <input type="radio" id="finalidade-sugestao" name="finalidade" value="sugestao">
+              Sugestão
+            </label>
+          </fieldset>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui" required></textarea>
+          </div>
+
+          <div class="campo campo-checkbox">
+            <label for="newsletter">
+              <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+              Por favor, me inscreva na newsletter mensal
+            </label>
+          </div>
+
+          <button type="submit" class="btn-enviar">Entrar em Contato!</button>
+
+        </form>
+      </div>
+
+    </section>
+
+    <!-- Seção da equipe -->
+    <section class="equipe">
+      <h2>Estamos Aqui para Servi-lo</h2>
       <div class="equipe-grid">
         <figure>
           <img src="imagens/ana-silva.jpg" alt="Foto de Ana Silva">
@@ -74,54 +121,6 @@
           </figcaption>
         </figure>
       </div>
-    </section>
-
-    <!-- Formulário de Contato -->
-    <section class="formulario-contato">
-      <h2>Envie uma Mensagem</h2>
-      <form action="#" method="post">
-
-        <div class="campo">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-        </div>
-
-        <div class="campo">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-        </div>
-
-        <fieldset>
-          <legend>Finalidade da mensagem:</legend>
-          <label for="finalidade-consulta">
-            <input type="radio" id="finalidade-consulta" name="finalidade" value="consulta-geral" required>
-            Consulta Geral
-          </label>
-          <label for="finalidade-reserva">
-            <input type="radio" id="finalidade-reserva" name="finalidade" value="reserva">
-            Pergunta sobre Reserva
-          </label>
-          <label for="finalidade-sugestao">
-            <input type="radio" id="finalidade-sugestao" name="finalidade" value="sugestao">
-            Sugestão de Site
-          </label>
-        </fieldset>
-
-        <div class="campo">
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
-        </div>
-
-        <div class="campo campo-checkbox">
-          <label for="newsletter">
-            <input type="checkbox" id="newsletter" name="newsletter" value="sim">
-            Quero receber a newsletter mensal
-          </label>
-        </div>
-
-        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-
-      </form>
     </section>
 
   </main>

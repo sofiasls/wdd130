@@ -218,18 +218,43 @@ nav.redes-sociais img {
 
 /* ── Página Fale Conosco ── */
 
-/* Informações de contato */
-.contato-info address {
+/* Informações da empresa centralizadas */
+.empresa-info {
+  text-align: center;
+}
+
+.empresa-info h1 {
+  margin-bottom: 16px;
+}
+
+.empresa-info address {
   font-style: normal;
-  margin-bottom: 24px;
 }
 
-.contato-info address p {
-  margin: 6px 0;
+.empresa-info address p {
+  margin: 4px 0;
+  font-weight: bold;
 }
 
-.contato-info address a {
-  color: var(--cor-primaria);
+.empresa-info address a {
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Layout lado a lado: mapa + formulário */
+.contato-principal {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contato-principal .mapa {
+  flex: 1;
+}
+
+.contato-principal .formulario-contato {
+  flex: 1;
 }
 
 /* Mapa */
@@ -237,7 +262,6 @@ nav.redes-sociais img {
   border: none;
   display: block;
   width: 100%;
-  margin-top: 16px;
 }
 
 /* Equipe */
@@ -271,8 +295,7 @@ nav.redes-sociais img {
 
 /* Formulário */
 .formulario-contato form {
-  max-width: 640px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .campo {
