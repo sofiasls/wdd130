@@ -33,7 +33,7 @@ header {
   grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 48px;
   padding: 16px 24px;
   background-color: var(--cor-secundaria);
   color: var(--cor-branco);
@@ -48,7 +48,7 @@ header img {
 nav {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 0;
 }
 
 nav a {
@@ -57,7 +57,12 @@ nav a {
   font-weight: bold;
   font-size: 1rem;
   border: 1px solid var(--cor-branco);
+  border-right: none;
   padding: 6px 14px;
+}
+
+nav a:last-child {
+  border-right: 1px solid var(--cor-branco);
 }
 
 nav a:hover {
