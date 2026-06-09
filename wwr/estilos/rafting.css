@@ -33,7 +33,8 @@ header {
   grid-template-columns: auto 1fr;
   align-items: center;
   padding: 16px 24px;
-  background-color: #b8a9d9;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branco);
   max-width: 100%;
 }
 
@@ -44,22 +45,19 @@ header img {
 /* ── Nav — CSS Flex (links lado a lado) ── */
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 24px;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--cor-secundaria);
+  color: var(--cor-branco);
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid var(--cor-secundaria);
-  padding: 6px 14px;
 }
 
 nav a:hover {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-branco);
+  color: var(--cor-destaque);
 }
 
 /* ── Títulos ── */
