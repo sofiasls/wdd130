@@ -30,8 +30,10 @@ body {
 /* ── Header — CSS Grid (logo + nav lado a lado) ── */
 header {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   padding: 16px 24px;
   background-color: var(--cor-secundaria);
   color: var(--cor-branco);
@@ -54,10 +56,13 @@ nav a {
   color: var(--cor-branco);
   font-weight: bold;
   font-size: 1rem;
+  border: 1px solid var(--cor-branco);
+  padding: 6px 14px;
 }
 
 nav a:hover {
-  color: var(--cor-destaque);
+  background-color: var(--cor-branco);
+  color: var(--cor-secundaria);
 }
 
 /* ── Títulos ── */
