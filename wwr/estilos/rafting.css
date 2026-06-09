@@ -73,9 +73,6 @@ nav a:hover {
   color: var(--cor-secundaria);
 }
 
-nav.redes-sociais a:hover {
-  background-color: transparent;
-}
 
 /* ── Títulos ── */
 h1, h2 {
@@ -226,6 +223,11 @@ nav.redes-sociais {
 
 nav.redes-sociais a {
   text-decoration: none;
+  border: 2px solid var(--cor-branco);
+  padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav.redes-sociais img {
