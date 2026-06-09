@@ -33,7 +33,7 @@ header {
   grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 8px;
   padding: 16px 24px;
   background-color: var(--cor-secundaria);
   color: var(--cor-branco);
