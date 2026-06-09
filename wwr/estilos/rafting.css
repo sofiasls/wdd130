@@ -56,18 +56,25 @@ nav a {
   color: var(--cor-branco);
   font-weight: bold;
   font-size: 1rem;
+}
+
+header nav a {
   border: 1px solid var(--cor-branco);
   border-right: none;
   padding: 6px 14px;
 }
 
-nav a:last-child {
+header nav a:last-child {
   border-right: 1px solid var(--cor-branco);
 }
 
 nav a:hover {
   background-color: var(--cor-branco);
   color: var(--cor-secundaria);
+}
+
+nav.redes-sociais a:hover {
+  background-color: transparent;
 }
 
 /* ── Títulos ── */
