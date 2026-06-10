@@ -48,7 +48,6 @@ header img {
 nav {
   display: flex;
   justify-content: center;
-  gap: 0;
 }
 
 nav a {
@@ -138,19 +137,9 @@ div.hero article img {
 }
 
 /* ── Seção História ── */
-section.historia {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
 section.historia h2 {
   color: var(--cor-primaria);
   margin-bottom: 8px;
-}
-
-section.historia p {
-  color: var(--cor-texto);
 }
 
 /* ── Seção Adventure Awaits — CSS Flex com 5 figuras ── */
@@ -170,12 +159,10 @@ section.adventure h2 {
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
-  width: 100%;
 }
 
 .galeria figure {
   flex: 0 0 18%;
-  width: 18%;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -312,10 +299,6 @@ nav.redes-sociais img {
 }
 
 /* Formulário */
-.formulario-contato form {
-  width: 100%;
-}
-
 .campo {
   display: flex;
   flex-direction: column;
@@ -464,10 +447,6 @@ fieldset input[type="radio"] {
   text-align: center;
 }
 
-.newsletter h2 {
-  margin-bottom: 12px;
-}
-
 .newsletter form {
   max-width: 500px;
   margin: 24px auto 0;
@@ -501,10 +480,6 @@ fieldset input[type="radio"] {
 /* ── Tabela de passeios ── */
 .tabela-passeios {
   padding: 48px;
-}
-
-.tabela-passeios h2 {
-  margin-bottom: 24px;
 }
 
 table {
