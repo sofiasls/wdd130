@@ -403,7 +403,7 @@ fieldset input[type="radio"] {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--cor-destaque);
-  color: #fff;
+  color: var(--cor-texto);
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
